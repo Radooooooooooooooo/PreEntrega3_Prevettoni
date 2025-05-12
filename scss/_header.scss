@@ -2,7 +2,8 @@
 @use "mixins";
 
 body {
-    @include mixins.theme;
+
+    
     header {
         @include mixins.flex-center;
 

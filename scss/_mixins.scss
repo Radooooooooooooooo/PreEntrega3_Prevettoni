@@ -11,14 +11,3 @@
     border: 0.5rem solid #000000;
     border-radius:1rem;
 }
-
-@mixin theme {
-    @if variables.$theme == light{
-        background-color:#ffffff;
-        color:#000000;
-    }
-    @else if variables.$theme != light{
-        background-color:#000000;
-        color:#ffffff;
-    }
-}
