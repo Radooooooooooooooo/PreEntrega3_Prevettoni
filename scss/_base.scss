@@ -1,0 +1,45 @@
+@use "variables";
+
+body {
+    font-style:variables.$font-stack;
+    background-color:variables.$secondary-color;
+}
+
+header {
+    background-color: variables.$primary-color;
+    color:variables.$secondary-color;
+}
+
+a {
+    text-decoration:none;
+    color:variables.$secondary-color;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color:#0000ff;
+    }
+}
+
+ul {
+    list-style:none;
+}
+
+li {
+    color:variables.$primary-color;
+}
+
+.a_color {
+    color:variables.$primary-color;
+
+    &:hover {
+        color:#0000ff
+    }
+}
+
+.ul_card {
+    list-style: circle;
+}
+
+.balanceado_a {
+    color:blue
+}

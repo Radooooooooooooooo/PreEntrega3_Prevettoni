@@ -1,0 +1,14 @@
+@use "variables";
+@use "mixins";
+
+body {
+    @include mixins.theme;
+    header {
+        @include mixins.flex-center;
+
+        #ul_nav {
+            @include mixins.flex-center;
+            gap:1.5rem;
+        }
+    }
+    }

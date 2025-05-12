@@ -1,0 +1,42 @@
+@use "variables";
+@use "mixins";
+
+.item {
+    margin:1rem;
+    @include mixins.flex-center;
+    flex-direction:row;
+}
+.card_container {
+    @include mixins.flex-center;
+    flex-direction:column;
+    justify-content:center
+}
+
+.iframe {
+    @include mixins.flex-center;
+    @include mixins.bordes;
+}
+
+.ul_card {
+    list-style:none;
+    @include mixins.flex-center;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.header_balanceado {
+    display: flex;
+    flex-direction:row;
+    gap:1.5rem;
+}
+
+#a_balanceado {
+    color: #0000ff;
+}
+
+@media (min-width:1024px) {
+    .iframe {
+        @include mixins.flex-center;
+        justify-content:center;
+    }
+}
