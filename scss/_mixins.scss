@@ -17,6 +17,8 @@
     border-radius: 1rem;
 }
 
+/*este mixin es un responsive general para que no sobre salgan los elementos del grid container,no se por que motivo se borra el @include del scss pero en el css quedo escrito asi que preferi no tocar lo que ya funciona*/
+
 @mixin responsive-layout($display: flex, $direction: row, $wrap: wrap, $gap: 1rem, $justify: center, $align: center, $breakpoint: 768px, $mobile-direction: column) {
     display: $display;
     flex-direction: $direction;
