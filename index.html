@@ -3,41 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/870f74d769.js" crossorigin="anonymous"></script>
     <link href="css/style.css" rel="stylesheet">
     <title>Waggy</title>
 </head>
 <body>
-    <header>
-        <h1>Waggy</h1>
-        <nav class="header__nav">
-            <ul id="ul_nav">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="#importante">Perros</a></li>
-                <li><a href="#importante">Gatos</a></li>
-            </ul>
-        </nav>
-    </header>
-<main class="card_container" id="importante">
-    <article class="item">
-        <h2 class="titulo">Perros</h2>
-        <ul class="ul_card">
-            <li><a href="pages/balanceado.html" class="a_color">Balanceado</a></li>
-            <li><a href="pages/higene.html" class="a_color">Higene</a></li>
-        </ul>
-    </article>
-    <article class="item">
-        <h2 class="titulo">Gatos</h2>
-        <ul class="ul_card">
-            <li><a href="pages/balanceado.html" class="a_color">Balanceado</a></li>
-            <li><a href="pages/higene.html" class="a_color">Higene</a></li>
-        </ul>
-    </article>
-</main>
-<section class="iframe">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1646.1988941910138!2d-58.739718695944426!3d-34.3912338621804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9f87ec663923%3A0xff5b4c2d31491c5e!2sLa%20Campi%C3%B1a!5e0!3m2!1ses!2sar!4v1747079384280!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iframe__item"></iframe>
-</section>
-<footer>
-    <p>&copy; 2025 todos los derechos reservados</p>
-</footer>
+    <div class="grid_container">
+        <header>
+            <form>
+                <input type="text" placeholder="Que estas buscando?...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <h1>Waggy</h1>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="./index.html" class="list_item">Inicio</a></li>
+                    <li><a href="#main" class="list_item">Perros</a></li>
+                    <li><a href="#main" class="list_item">Gatos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article class="main__article" id="main">
+                <h2>Perros</h2>
+                <ul>
+                    <li><a href="pages/balanceado.html" class="list_item">Balanceado</a></li>
+                    <li><a href="pages/productos.html" class="list_item">Productos</a></li>
+                </ul>
+            </article>
+            <article class="main__article">
+                <h2>Gatos</h2>
+                <ul>
+                    <li><a href="pages/balanceado(1).html" class="list_item">Balanceado</a></li>
+                    <li><a href="pages/productos.html" class="list_item">Productos</a></li>
+                </ul>
+            </article>
+        </main>
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1646.1988941910138!2d-58.739718695944426!3d-34.3912338621804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9f87ec663923%3A0xff5b4c2d31491c5e!2sLa%20Campi%C3%B1a!5e0!3m2!1ses!2sar!4v1747079384280!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iframe__item"></iframe>
+        </section>
+        <footer>
+            <p>&copy; 2025 todos los derechos reservados</p>
+        </footer>
+    </div>
 </body>
 </html>

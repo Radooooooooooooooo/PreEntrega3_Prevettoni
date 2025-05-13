@@ -1,6 +1,5 @@
 @use "variables";
-@use "base";
-@use "mixins";
 @use "layout";
-@use "header";
-@use "balanceado";
+@use "components";
+@use "base";
+@use "balanceado_layout";

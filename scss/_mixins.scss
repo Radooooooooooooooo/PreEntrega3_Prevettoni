@@ -1,13 +1,28 @@
 @use "variables";
 
+
 @mixin flex-center {
     display:flex;
-    align-items:center;
+    align-items: center;
     text-align:center;
 }
 
+@mixin padd-marg {
+    padding:1rem;
+    margin:0.5rem;
+}
 
 @mixin bordes {
     border: 0.5rem solid #000000;
-    border-radius:1rem;
+    border-radius: 1rem;
 }
+
+@mixin responsive-layout($display: flex, $direction: row, $wrap: wrap, $gap: 1rem, $justify: center, $align: center, $breakpoint: 768px, $mobile-direction: column) {
+    display: $display;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    gap: $gap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
